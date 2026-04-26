@@ -28,6 +28,17 @@ module.exports = {
       mainnet: process.env.ETHERSCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
       polygonAmoy: process.env.POLYGONSCAN_API_KEY,
+      amoy: process.env.POLYGONSCAN_API_KEY,
     },
+    customChains: [
+      {
+        network: "amoy",
+        chainId: 80002,
+        urls: {
+          apiURL: "https://api-amoy.polygonscan.com/api",
+          browserURL: "https://amoy.polygonscan.com",
+        },
+      },
+    ],
   },
 };
