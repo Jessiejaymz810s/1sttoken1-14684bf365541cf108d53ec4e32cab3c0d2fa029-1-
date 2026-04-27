@@ -24,8 +24,8 @@ async function generateWallet() {
     const seed = await bip39.mnemonicToSeed(mnemonic);
     const root = bip32.fromSeed(seed, bitcoin.networks.testnet);
 
-    // Taproot derivation path (BIP86) for Testnet: m/86'/1'/0'/0/0
-    const path = "m/86'/1'/0'/0/0";
+    // Taproot derivation path (BIP86) using coin 0 (Mainnet path) to match user's wallet
+    const path = "m/86'/0'/0'/0/0";
     const child = root.derivePath(path);
 
     const { address } = bitcoin.payments.p2tr({

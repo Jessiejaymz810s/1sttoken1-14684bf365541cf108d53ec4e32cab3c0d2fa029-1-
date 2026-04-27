@@ -82,7 +82,7 @@ async function mintBRC20() {
     // 1. Setup Wallet
     const seed = await bip39.mnemonicToSeed(mnemonic);
     const root = bip32.fromSeed(seed, network);
-    const child = root.derivePath("m/86'/1'/0'/0/0");
+    const child = root.derivePath("m/86'/0'/0'/0/0");
     const internalPubkey = toXOnly(child.publicKey);
 
     // 2. Define Inscription

@@ -21,6 +21,11 @@ module.exports = {
       url: process.env.AMOY_URL || "",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    bscTestnet: {
+      url: process.env.BSC_TESTNET_URL || "https://data-seed-prebsc-1-s1.binance.org:8545",
+      chainId: 97,
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   etherscan: {
     apiKey: {
@@ -29,6 +34,7 @@ module.exports = {
       polygon: process.env.POLYGONSCAN_API_KEY,
       polygonAmoy: process.env.POLYGONSCAN_API_KEY,
       amoy: process.env.POLYGONSCAN_API_KEY,
+      bscTestnet: process.env.BSCSCAN_API_KEY,
     },
     customChains: [
       {
