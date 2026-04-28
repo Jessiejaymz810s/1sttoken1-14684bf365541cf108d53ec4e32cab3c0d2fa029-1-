@@ -26,6 +26,11 @@ module.exports = {
       chainId: 97,
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    base: {
+      url: process.env.BASE_URL || "https://mainnet.base.org",
+      chainId: 8453,
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   etherscan: {
     apiKey: {
@@ -35,6 +40,7 @@ module.exports = {
       polygonAmoy: process.env.POLYGONSCAN_API_KEY,
       amoy: process.env.POLYGONSCAN_API_KEY,
       bscTestnet: process.env.BSCSCAN_API_KEY,
+      base: process.env.BASESCAN_API_KEY,
     },
     customChains: [
       {
