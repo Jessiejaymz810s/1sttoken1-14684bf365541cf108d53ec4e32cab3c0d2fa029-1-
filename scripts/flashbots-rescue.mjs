@@ -59,6 +59,7 @@ const APPROVALS_TO_REVOKE = [
     ],
   },
   {
+    0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0
     token: "0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6", // USDD
     name: "USDD",
     spenders: [
