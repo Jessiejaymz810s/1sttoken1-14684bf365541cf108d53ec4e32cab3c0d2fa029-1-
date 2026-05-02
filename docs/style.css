@@ -296,3 +296,131 @@ h2 {
         word-break: break-all;
     }
 }
+
+/* NFT Collection */
+.nft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.nft-card {
+    padding: 1.5rem;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nft-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--secondary);
+    box-shadow: 0 20px 40px rgba(0, 243, 255, 0.2);
+}
+
+.nft-image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.nft-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.nft-card:hover .nft-image-container img {
+    transform: scale(1.1);
+}
+
+.nft-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nft-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.rarity {
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.epic { background: linear-gradient(45deg, #bc13fe, #7a13fe); color: white; }
+.legendary { background: linear-gradient(45deg, #ff9e00, #ff5e00); color: white; }
+.rare { background: linear-gradient(45deg, #00f3ff, #0093ff); color: white; }
+
+/* NFT Collection */
+.nft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.nft-card {
+    padding: 1.5rem;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nft-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--secondary);
+    box-shadow: 0 20px 40px rgba(0, 243, 255, 0.2);
+}
+
+.nft-image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.nft-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.nft-card:hover .nft-image-container img {
+    transform: scale(1.1);
+}
+
+.nft-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nft-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.rarity {
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.epic { background: linear-gradient(45deg, #bc13fe, #7a13fe); color: white; }
+.legendary { background: linear-gradient(45deg, #ff9e00, #ff5e00); color: white; }
+.rare { background: linear-gradient(45deg, #00f3ff, #0093ff); color: white; }
