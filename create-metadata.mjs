@@ -10,11 +10,11 @@ import path from "path";
 import os from "os";
 
 // --- Configuration ---
-const MINT_ADDRESS = "6GGxy5Mb4q1Re887vcpiahaPXBRpUaPZArk9LWYgTcT1";
+const MINT_ADDRESS = "EqzogyGM1RKUdwpNgUeuWLy6L8wiFxGxFQcugkiPsemc";
 const TOKEN_NAME = "Quazr";
 const TOKEN_SYMBOL = "QZSOL";
 const METADATA_URI = "https://raw.githubusercontent.com/Jessiejaymz810s/1sttoken1-14684bf365541cf108d53ec4e32cab3c0d2fa029-1-/main/token-metadata.json";
-const RPC_URL = "https://api.devnet.solana.com";
+const RPC_URL = "https://api.mainnet-beta.solana.com";
 
 async function main() {
   console.log("🚀 Setting up Metaplex UMI...");

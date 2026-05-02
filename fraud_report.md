@@ -13,6 +13,7 @@
 |---|---|
 | Incident Type | Smart Contract Exploit / Token Drainer / Wallet Compromise |
 | Chains Affected | Ethereum Mainnet, Bitcoin (BTC), Core DAO |
+| Chains Checked (0 Balance) | BSC, Polygon, Base, Arbitrum, Solana |
 | Primary ETH Address | `0x29eFB6A93c565EFFF225654C831Bb58BEB2BCbfD` |
 | Primary BTC Address | `bc1qdtt9a76hu30pvw344tly6yeakywflr36ahu433` |
 
@@ -176,7 +177,24 @@ The Core DAO wallet shows 48 historical transactions. The residual balance of 0.
 
 ---
 
-## 6. ATTACK METHODOLOGY SUMMARY
+## 6. MULTI-CHAIN SWEEP ASSESSMENT (BSC, Polygon, Base, Arbitrum, Solana)
+
+A comprehensive scan was performed across major Layer 1 and Layer 2 blockchains to identify any residual funds or active drainer activity.
+
+| Chain | Native Balance | Token Findings | Status |
+|---|---|---|---|
+| **Solana** | 0 SOL | No SPL token accounts found | **Drained** |
+| **BSC** | 0 BNB | 0 USDT, 0 USDC | **Drained** |
+| **Polygon** | 0 MATIC | 0 USDT, 0 USDC | **Drained** |
+| **Base** | 0 ETH | 0 USDC | **Drained** |
+| **Arbitrum** | 0 ETH | 0 USDT, 0 USDC | **Drained** |
+
+### 6.1 Assessment
+The compromise of the seed phrase/private key for `0x29eFB6...` (and associated Solana keys) appears to have resulted in a total sweep across all active networks. Automated bots have effectively zeroed out all primary assets and stablecoins.
+
+---
+
+## 7. ATTACK METHODOLOGY SUMMARY
 
 Based on the on-chain evidence, the following attack vectors were used:
 
